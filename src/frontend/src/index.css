@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 1rem;
+        /* Light green (#7ED9A5) and white healthcare theme - Light mode */
+        --background: 1 0 0;
+        --foreground: 0.2 0.02 180;
+        --card: 1 0 0;
+        --card-foreground: 0.2 0.02 180;
+        --popover: 1 0 0;
+        --popover-foreground: 0.2 0.02 180;
+        /* Primary: Light green #7ED9A5 */
+        --primary: 0.82 0.12 160;
+        --primary-foreground: 0.2 0.02 180;
+        /* Secondary: Soft mint */
+        --secondary: 0.92 0.06 160;
+        --secondary-foreground: 0.2 0.02 180;
+        --muted: 0.96 0.01 160;
+        --muted-foreground: 0.5 0.02 180;
+        /* Accent: Pastel green */
+        --accent: 0.88 0.10 155;
+        --accent-foreground: 0.2 0.02 180;
+        --destructive: 0.58 0.22 25;
+        --destructive-foreground: 0.99 0 0;
+        --border: 0.92 0.01 160;
+        --input: 0.92 0.01 160;
+        --ring: 0.82 0.12 160;
+        --chart-1: 0.82 0.12 160;
+        --chart-2: 0.88 0.10 155;
+        --chart-3: 0.75 0.14 165;
+        --chart-4: 0.85 0.11 150;
+        --chart-5: 0.78 0.13 158;
+        --sidebar: 0.99 0 0;
+        --sidebar-foreground: 0.2 0.02 180;
+        --sidebar-primary: 0.82 0.12 160;
+        --sidebar-primary-foreground: 0.2 0.02 180;
+        --sidebar-accent: 0.96 0.01 160;
+        --sidebar-accent-foreground: 0.2 0.02 180;
+        --sidebar-border: 0.92 0.01 160;
+        --sidebar-ring: 0.82 0.12 160;
+    }
+
+    .dark {
+        /* Light green healthcare theme - Dark mode */
+        --background: 0.15 0.02 180;
+        --foreground: 0.95 0.01 160;
+        --card: 0.2 0.02 180;
+        --card-foreground: 0.95 0.01 160;
+        --popover: 0.18 0.02 180;
+        --popover-foreground: 0.95 0.01 160;
+        --primary: 0.82 0.12 160;
+        --primary-foreground: 0.15 0.02 180;
+        --secondary: 0.25 0.02 160;
+        --secondary-foreground: 0.95 0.01 160;
+        --muted: 0.25 0.02 180;
+        --muted-foreground: 0.65 0.02 180;
+        --accent: 0.75 0.14 165;
+        --accent-foreground: 0.95 0.01 160;
+        --destructive: 0.65 0.2 25;
+        --destructive-foreground: 0.15 0.02 180;
+        --border: 0.3 0.02 180;
+        --input: 0.3 0.02 180;
+        --ring: 0.82 0.12 160;
+        --chart-1: 0.82 0.12 160;
+        --chart-2: 0.75 0.14 165;
+        --chart-3: 0.70 0.16 170;
+        --chart-4: 0.78 0.13 158;
+        --chart-5: 0.73 0.15 163;
+        --sidebar: 0.2 0.02 180;
+        --sidebar-foreground: 0.95 0.01 160;
+        --sidebar-primary: 0.82 0.12 160;
+        --sidebar-primary-foreground: 0.95 0.01 160;
+        --sidebar-accent: 0.25 0.02 180;
+        --sidebar-accent-foreground: 0.95 0.01 160;
+        --sidebar-border: 0.3 0.02 180;
+        --sidebar-ring: 0.82 0.12 160;
+    }
+
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: oklch(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+    background: oklch(var(--muted));
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: oklch(var(--muted-foreground));
+}
+
+/* Smooth animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Soft shadows */
+.shadow-soft {
+    box-shadow: 0 4px 20px rgba(126, 217, 165, 0.15);
+}
+
+.shadow-soft-lg {
+    box-shadow: 0 10px 40px rgba(126, 217, 165, 0.2);
+}
+

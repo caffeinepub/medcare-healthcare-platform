@@ -1,0 +1,15 @@
+{
+  "frontend/src/App.tsx": "Simplified main application component rendering single-page HomePage with ThemeProvider and Toaster integration.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for backend operations including fetching user profiles, saving new profiles, and updating existing profiles with proper error handling and cache invalidation.",
+  "frontend/src/pages/LoginPage.tsx": "Beautiful healthcare-themed login page with hero section, feature highlights, and Internet Identity authentication button using MedCare branding (blue, green, white).",
+  "frontend/src/pages/Dashboard.tsx": "User dashboard displaying profile information, quick action cards for upcoming features (medical records, prescriptions, appointments, health tracking), and logout functionality.",
+  "frontend/src/components/ProfileSetupModal.tsx": "Modal dialog for first-time users to set up their profile with name, email, and medical ID fields with validation.",
+  "frontend/src/index.css": "Global styles with OKLCH-based light green (#7ED9A5) healthcare color system, Poppins/Open Sans typography, smooth scrolling, custom scrollbar, and soft shadow utilities for calm healthcare aesthetic.",
+  "frontend/tailwind.config.js": "Tailwind configuration with extended color tokens for light green theme, Poppins/Inter heading fonts, Open Sans/Roboto body fonts, soft shadow utilities, and custom animations.",
+  "frontend/src/components/Layout.tsx": "Responsive layout component with fixed navigation bar, mobile menu, MedCare logo, route-based navigation highlighting, and footer with copyright information.",
+  "frontend/src/pages/HomePage.tsx": "Complete single-page healthcare application with smooth-scrolling sections including Hero, Services, Medicine Availability, How It Works, Why Choose MedCare, Testimonials, and Footer with fixed navigation and mobile-responsive design using light green theme.",
+  "frontend/src/pages/MedicineAvailabilityPage.tsx": "Medicine availability page with search functionality, displaying placeholder medicine inventory with stock status, pricing, and category information in an organized card layout.",
+  "frontend/src/pages/ServicesPage.tsx": "Services page showcasing four main delivery options (home delivery, prescription-based orders, emergency delivery, subscription refill) with detailed features and additional trust indicators.",
+  "frontend/src/pages/AboutUsPage.tsx": "About page presenting MedCare's mission, core values, licensed pharmacist information, and comprehensive list of certifications and credentials with professional healthcare positioning.",
+  "frontend/src/pages/ContactUsPage.tsx": "Contact page with elegant form for name, email, and message submission, contact information cards, and emergency hotline section with frontend-only form validation."
+}
